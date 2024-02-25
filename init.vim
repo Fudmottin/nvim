@@ -3,11 +3,13 @@ set tabstop=4       " A tab is four spaces
 set shiftwidth=4    " An indent is four spaces
 set expandtab       " Use spaces, not tabs
 set autoindent      " Copy indent from current line when starting a new line
+set number          " Show line numbers
 set fileencoding=utf-8
 set backspace=indent,eol,start
 
 " Syntax Highlighting
 syntax on           " Enable syntax highlighting
+highlight LineNr ctermfg=grey guifg=grey "Mute line numbers
 
 " Filetype settings
 filetype plugin indent on  " Enable filetype detection and loading
